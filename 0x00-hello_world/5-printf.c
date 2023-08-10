@@ -1,7 +1,8 @@
 #include<stdio.h>
 /**
- *main- using printf prints with proper grammar, but the outcome is a piece of art,
- *return: is 0
+ *main- using printf prints with proper grammar, 
+ *but the outcome is a piece of art,
+ *return- is 0
  */
 int main(void)
 {
