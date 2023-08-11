@@ -1,7 +1,8 @@
 #include<stdio.h>
 /**
- *main: prints the sizes of char, int, long int
- *long long int, float and other types
+ *main: prints the sizes of char, int, long int long long int, float 
+ *and other types
+ *Description: mimic the output given in the  example
  *Return: 0
  */
 int main(void)
