@@ -3,7 +3,7 @@
  *main - Write a program that prints the alphabet
  *in lowercase, followed by a new line.i
  *using only putchar function
- *Retun: 0 zero   on success
+ *Return: 0 zero   on success
  */
 int main(void)
 {
