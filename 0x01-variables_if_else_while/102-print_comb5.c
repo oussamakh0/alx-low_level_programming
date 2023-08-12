@@ -3,7 +3,7 @@
   *main - myfunc
   *Return: 0
 */
-int main(void)
+/*int main(void)
 {
 	int i, j;
 
@@ -26,4 +26,37 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+*/
+int main()
+{
+	int i;
+	int j;
+	int k;
+	int l;
 
+	for (i = 0; i <= 9; i++)
+	{
+		for (j = 0; j <= 8; j++)
+		{
+			for (k = 0; k <= 9; k++)
+			{
+				for (l = 0; l <= 9; l++)
+				{
+					if ( i + j >= l + k)
+						continue;
+					putchar(48 + i);
+					putchar(48 + j);
+					putchar(' ');
+					putchar(48 + k);
+					putchar(48 + l);
+					if (i == 9 && j == 8 && k == 9 && l == 9)
+						break;
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
+	}
+	putchar('\n');
+	return 0;
+}
