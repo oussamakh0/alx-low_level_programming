@@ -1,8 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/**main - will assign a random number to the variable n each time it is executed.
- *Complete the source code in order to print the last digit of the number storer
+/**
+ *main - will assign a random number to the variable n each
+ *time it is executed.
+ *Complete the source code in order to print the last digi
+ *t of the number storer
  *in the variable n.
  *Return: 0 on success
  */
