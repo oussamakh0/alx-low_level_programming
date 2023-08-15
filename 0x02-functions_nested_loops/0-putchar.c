@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  *main-
  *DESCRIPTION:
@@ -11,7 +11,7 @@ int main(void)
 
 	i = -1;
 	while (str[++i] != '\0')
-		putchar(str[i]);
-	putchar('\n');
+		func_putchar(str[i]);
+	func_putchar('\n');
 	return (0);
 }
