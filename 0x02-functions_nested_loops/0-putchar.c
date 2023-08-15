@@ -11,7 +11,7 @@ int main(void)
 
 	i = -1;
 	while (str[++i] != '\0')
-		func_putchar(str[i]);
-	func_putchar('\n');
+		_putchar(str[i]);
+	_putchar('\n');
 	return (0);
 }
