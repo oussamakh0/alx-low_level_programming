@@ -8,10 +8,6 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 
-void func_putchar(char c)
-{
-	_putchar(c);
-}
 
 void print_alphabet(void)
 {
@@ -20,7 +16,7 @@ void print_alphabet(void)
 	c = 'a';
 	while(c <= 'z')
 	{
-		func_putchar(c++);
+		_putchar(c++);
 	}
 
 }
