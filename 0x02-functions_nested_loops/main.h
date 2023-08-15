@@ -4,14 +4,10 @@
 #include <stdio.h>
 #include <unistd.h>
 
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
 
 void func_putchar(char c)
 {
-	_putchar(c);
+	putchar(c);
 }
 
 void print_alphabet(void)
