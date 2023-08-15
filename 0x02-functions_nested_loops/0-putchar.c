@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  *main-
- *DESCRIPTION: create a fun that prints _putchar + its header file
- *Return: 0 on success 
+ *Description: create a fun that prints _putchar + its header file
+ *Return: 0 on success
  */
 int main(void)
 {
