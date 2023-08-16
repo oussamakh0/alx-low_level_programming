@@ -3,9 +3,14 @@
  *main - prints the alphabet, in lowercase, followed by a new line
  *Return: 0 on success
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	_putchar('\n');
-	return (0);
+	char c;
+
+	c = 'a';
+	while(c <= 'z')
+	{
+		_putchar(c++);
+	}
+
 }
