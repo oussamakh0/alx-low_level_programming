@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *add - add two parameters 
+ *add - add two parameters
  *@n1: number 1
  *@n2: number 2
  *Return: the sum of n1 and n2
