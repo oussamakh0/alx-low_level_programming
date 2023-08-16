@@ -2,7 +2,7 @@
 /**
  *_isalpha- check if the arg is alpha
  *@c: character
- *Return: 1 if true or 0 
+ *Return: 1 if true or 0
  */
 int _isalpha(int c)
 {
