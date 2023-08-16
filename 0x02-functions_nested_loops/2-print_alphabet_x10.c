@@ -12,7 +12,10 @@ void print_alphabet_x10(void)
 		print_alphabet();
 	}
 }
-
+/**
+ *print_alphabet - prints alpha..
+ *Return: nothing to return
+ */
 void print_alphabet(void)
 {
 	char c;
