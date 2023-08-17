@@ -10,7 +10,7 @@ void print_to_98(int n)
 	if (n <= 98)
 		ft_putchar_less_than(n);
 	else if (n > 98)
-		ft_putchar_great_than(n)
+		ft_putchar_great_than(n);
 	_putchar('\n');
 }
 
