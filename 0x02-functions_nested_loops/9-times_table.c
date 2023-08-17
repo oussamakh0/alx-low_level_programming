@@ -1,21 +1,21 @@
 #include "main.h"
 /**
  *times_table - print times table
- *@n1: parameter 1
- *@n2: parameter 2
+ *@f_n: parameter 1
+ *@s_n: parameter 2
  *Return: nothing if success
  */
 void times_table(void)
 {
-	int n1;
-	int n2;
+	int f_n;
+	int s_n;
 
-	for (n1 = 0; n1 <= 9; n1++)
+	for (f_n = 0; f_n <= 9; f_n++)
 	{
-		n2 = 0;
+		s_n = 0;
 		do {
-			func_print_num(n1, n2);
-		} while (++n2 <= 9);
+			func_print_num(f_n, s_n);
+		} while (++s_n <= 9);
 	}
 }
 
