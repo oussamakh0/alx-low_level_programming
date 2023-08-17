@@ -25,4 +25,6 @@ void times_table(void);
 
 void print_to_98(int n);
 
+void func_print_num(int n1, int n2);
+
 #endif

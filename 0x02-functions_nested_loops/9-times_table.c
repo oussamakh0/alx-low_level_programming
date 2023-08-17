@@ -3,6 +3,8 @@
  *times_table - print times table
  *Return: nothing if success
  */
+void func_print_num(int n1, int n2);
+
 void times_table(void)
 {
 	int n1;
@@ -10,17 +12,37 @@ void times_table(void)
 
 	for (n1 = 0; n1 <= 9; n1++)
 	{
-		for (n2 = 0; n2 <= 9; n2++)
+		n2 = 0;
+		do
 		{
-			_putchar((n1 * n2) + 48);
-			if (n2 != 9)
-			{
-				_putchar(',');
-				_putchar(' ');
-				if ((n1 * n2) > 9)
-					_putchar(' ');
-			}
+			func_print_num(n1, n2);
 		}
-		_putchar('\n');
+		while (++n2 <= 9);
 	}
+}
+
+/**
+ *func_print_num - check the function
+ *@n1: first arg
+ *@n2: second arg
+ *Return: nothing on success
+ */
+void func_print_num(int n1, int n2)
+{
+	if ((n1 * n2) > 9)
+	{
+		putchar(((n1 * n2) / 10) + 48);
+		putchar(((n1 * n2) % 10) + 48);
+	}
+	else
+		putchar((n1 * n2) + 48);
+	if (n2 != 9)
+	{
+		putchar(',');
+		putchar(' ');
+		if ((n1 * ++n2) < 10)
+			putchar(' ');
+	}
+	else
+		putchar('\n');
 }
