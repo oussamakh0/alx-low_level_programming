@@ -13,11 +13,9 @@ void times_table(void)
 	for (n1 = 0; n1 <= 9; n1++)
 	{
 		n2 = 0;
-		do
-		{
+		do {
 			func_print_num(n1, n2);
-		}
-		while (++n2 <= 9);
+		} while (++n2 <= 9);
 	}
 }
 
