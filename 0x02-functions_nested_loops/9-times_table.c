@@ -31,18 +31,18 @@ void func_print_num(int n1, int n2)
 {
 	if ((n1 * n2) > 9)
 	{
-		putchar(((n1 * n2) / 10) + 48);
-		putchar(((n1 * n2) % 10) + 48);
+		_putchar(((n1 * n2) / 10) + 48);
+		_putchar(((n1 * n2) % 10) + 48);
 	}
 	else
-		putchar((n1 * n2) + 48);
+		_putchar((n1 * n2) + 48);
 	if (n2 != 9)
 	{
-		putchar(',');
-		putchar(' ');
+		_putchar(',');
+		_putchar(' ');
 		if ((n1 * ++n2) < 10)
-			putchar(' ');
+			_putchar(' ');
 	}
 	else
-		putchar('\n');
+		_putchar('\n');
 }
