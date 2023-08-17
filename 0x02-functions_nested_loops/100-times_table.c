@@ -32,7 +32,12 @@ void f_print_num(int n1, int n2, int m)
 {
 	printf("%d", (n1 * n2));
 	if (n2 != m)
+	{
 		printf(", ");
+		if ((n1 * (n2 + 1) < 10))
+			printf("  ");
+		else if (((n1 * (n2 + 1)) >= 10) && ((n1 * (n2 + 1)) <= 99))
+			printf(" ");
 	else
 		printf("\n");
 }
