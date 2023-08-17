@@ -5,10 +5,10 @@
  */
 int main(void)
 {
-	int v1;
-	int v2;
-	int v3;
-	int count;
+	long int v1;
+	long int v2;
+	long int v3;
+	long int count;
 
 
 	v1 = 0;
