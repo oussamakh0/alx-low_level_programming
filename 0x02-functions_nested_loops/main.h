@@ -27,4 +27,6 @@ void print_to_98(int n);
 
 void func_print_num(int n1, int n2);
 
+void print_to_98(int n);
+
 #endif
