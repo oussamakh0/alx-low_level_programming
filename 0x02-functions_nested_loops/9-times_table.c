@@ -1,8 +1,6 @@
 #include "main.h"
 /**
  *times_table - print times table
- *@f_n: parameter 1
- *@s_n: parameter 2
  *Return: nothing if success
  */
 void times_table(void)
