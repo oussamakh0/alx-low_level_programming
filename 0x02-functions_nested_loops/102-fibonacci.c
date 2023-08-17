@@ -17,7 +17,7 @@ int main(void)
 	count = -1;
 	while (++count < 50)
 	{
-		printf("%d", v3);
+		printf("%ld", v3);
 		v1 = v2;
 		v2 = v3;
 		v3 = v1 + v2;
