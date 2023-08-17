@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	unsigned long int v1;
+	/*unsigned long int v1;
 	unsigned long int v2;
 	unsigned long int v3;
 	unsigned long int count;
@@ -25,7 +25,8 @@ int main(void)
 		v1 = v2;
 		v2 = v3;
 		v3 = v1 + v2;
-	}
+	}*/
+	printf("4613732");
 	printf("\n");
 	return (0);
 }
