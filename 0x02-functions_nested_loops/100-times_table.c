@@ -38,6 +38,7 @@ void f_print_num(int n1, int n2, int m)
 			printf("  ");
 		else if (((n1 * (n2 + 1)) >= 10) && ((n1 * (n2 + 1)) <= 99))
 			printf(" ");
+	}
 	else
 		printf("\n");
 }
