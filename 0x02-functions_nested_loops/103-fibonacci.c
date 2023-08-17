@@ -26,6 +26,7 @@ int main(void)
 		v2 = v3;
 		v3 = v1 + v2;
 	}
+	printf("%d", count);
 	printf("\n");
 	return (0);
 }
