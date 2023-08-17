@@ -15,7 +15,7 @@ int main(void)
 	{
 		if ((n % 3 == 0) || (n % 5 == 0))
 		{
-			ret +=n;
+			ret += n;
 		}
 	}
 	printf("%d\n", ret);
