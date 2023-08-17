@@ -1,10 +1,10 @@
 #include "main.h"
 /**
  *times_table - print times table
+ *@n1: parameter 1
+ *@n2: parameter 2
  *Return: nothing if success
  */
-void func_print_num(int n1, int n2);
-
 void times_table(void)
 {
 	int n1;
