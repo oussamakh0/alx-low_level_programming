@@ -4,7 +4,9 @@
  *@n: to be tested
  *Return: 1 if upper 0 if not
  */
+
 int _isupper(int c)
 {
-	return ((c >='A') && (c <= 'Z'));
+	return ((c >='A') &&
+			(c <= 'Z'));
 }
