@@ -2,7 +2,7 @@
 
 /**
  *_isupper - chck the code
- *@n: to be tested
+ *@c: to be tested
  *Return: 1 if upper 0 if not
  */
 
