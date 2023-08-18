@@ -1,12 +1,13 @@
 #include "main.h"
-
 /**
- *_isupper - chck the code
- *@c: to be tested
- *Return: 1 if upper 0 if not
+ * _isupper - check the func
+ * @c: to be checked
+ * Return: 0 or 1
  */
-
 int _isupper(int c)
 {
-	return ((c >='A') && (c <= 'Z'));
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
 }
