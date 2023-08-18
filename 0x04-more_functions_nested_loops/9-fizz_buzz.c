@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  *main - check the code
+ *Description - Fizz or Buzz or both ..
  *Return: 0 on success
  */
 int main(void)
