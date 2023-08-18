@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  *_isupper - chck the code
  *@n: to be tested
@@ -5,5 +6,5 @@
  */
 int _isupper(int c)
 {
-	return ((c >='A') && (c <= 'Z));
+	return ((c >='A') && (c <= 'Z'));
 }
