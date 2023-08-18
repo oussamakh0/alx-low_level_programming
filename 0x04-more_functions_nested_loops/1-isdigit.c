@@ -1,8 +1,7 @@
 #include "main.h"
 
-
 /**
- *_isdigit- is it a number
+ *_isdigit - is it a number
  *@c: to be checked
  *Return: 0 or 1
  */
@@ -10,5 +9,6 @@
  {
 	 if (c >= '0' && c <= '9')
 		 return (1);
-	 return (0);
+	 else
+		 return (0);
  }
