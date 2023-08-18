@@ -1,3 +1,6 @@
+#include "main.h"
+
+
 /**
  *_isdigit- is it a number
  *@c: to be checked
