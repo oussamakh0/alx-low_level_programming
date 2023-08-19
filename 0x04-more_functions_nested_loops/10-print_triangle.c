@@ -1,14 +1,13 @@
-#include "main.h"
-
+include "main.h"
 /**
  *print_triangle - check func
  *@size: how many # will be printed
  *Return: nothing on success
  */
-
 void print_triangle(int size)
 {
 	int i, j, k;
+
 	if (size > 0)
 	{
 		k = size;
