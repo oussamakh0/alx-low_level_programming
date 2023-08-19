@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
  *print_triangle - check func
  *@size: how many # will be printed
  *Return: nothing on success
  */
+
 void print_triangle(int size)
 {
 	int i, j, k;
@@ -20,7 +22,7 @@ void print_triangle(int size)
 				_putchar('#');
 			if ((i + 1) < size)
 			{
-				putchar('\n');
+				_putchar('\n');
 			}
 			k--;
 		}
