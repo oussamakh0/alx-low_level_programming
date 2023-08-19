@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  *print_triangle - check func
  *@size: how many # will be printed
