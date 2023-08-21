@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /**
- *
- *
- *
+ *print_array - print array elements
+ *@a: the array
+ *@n: number of elements
+ *Return: none if success
  */
 
 void print_array(int *a, int n)
@@ -18,5 +19,5 @@ void print_array(int *a, int n)
 		if (++i != n)
 			printf(" ,");
 	}
-	_putchar('\n');
+	printf("\n");
 }
