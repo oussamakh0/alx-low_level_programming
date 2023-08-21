@@ -3,7 +3,7 @@
 /**
  *_strlen - counts strings charachters = length
  *@s: arg is the string to be counted
- *Return : the string length or 0
+ *Return: i the string length
  */
 
 int _strlen(char *s)
@@ -13,5 +13,5 @@ int _strlen(char *s)
 	i = 0;
 	while (s[i] != '\0')
 		i++;
-	return (i);	
+	return (i);
 }
