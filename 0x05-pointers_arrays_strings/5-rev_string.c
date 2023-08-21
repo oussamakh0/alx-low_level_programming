@@ -10,10 +10,10 @@ void rev_string(char *s)
 {
 	int len;
 	int i;
+	char rev_s[300];
 
 	i = -1;
 	len = _strlen(s);
-	char rev_s[300];
 	len--;
 	while (++i <= len)
 		rev_s[i] = s[len - i];
