@@ -10,9 +10,11 @@ int _atoi(char *s)
 {
 	int cvr_s;
 	int sign;
+	int i;
 
 	cvr_s = 0;
 	sign = 1;
+	i = 0;
 	while (s[i] != '\0')
 	{
 		if (s[i] == '-')
