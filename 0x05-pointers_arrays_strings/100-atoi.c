@@ -15,8 +15,6 @@ int _atoi(char *s)
 	cvr_s = 0;
 	sign = 1;
 	i = 0;
-	if (s == "-2147483648")
-		return (-2147483648);
 	while (s[i] != '\0')
 	{
 		if (s[i] == '-')
@@ -28,6 +26,8 @@ int _atoi(char *s)
 	while (s[i] >= 48 && s[i] <= 57)
 	{
 		cvr_s = (cvr_s * 10) + (s[i] - 48);
+		if (cvr_s * sign == -2147483648)
+			return (cvr_s * sign);
 		i++;
 	}
 	return (cvr_s * sign);
