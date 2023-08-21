@@ -13,5 +13,5 @@ int _strlen(char *s)
 	i = 0;
 	while (s[i] != '\0')
 		i++;
-	return (0);	
+	return (i);	
 }
