@@ -15,14 +15,12 @@ void puts_half(char *str)
 	if (len % 2 == 0)
 	{
 		len /= 2;
-		while (str[--len] != '\0')
-			_putchar(str[len]);
+		_puts(str + len);
 	}
 	else
 	{
 		len = (len - 1) / 2;
-		while (str[--len] != '\0')
-			_putchar(str[len]);
+		_puts(str + len);
 	}
 	_putchar('\n');
 }
@@ -41,4 +39,20 @@ int _strlen(char *s)
 	while (s[i] != '\0')
 		i++;
 	return (i);
+}
+
+/**
+ *_puts - prints string s to stdout
+ *@s: arg to be outputed
+ *Return: none on success
+ */
+
+void _puts(char *s)
+{
+	int i;
+
+	i = 0;
+	while (s[i] != '\0')
+		_putchar(s[i++]);
+	_putchar('\n');
 }
