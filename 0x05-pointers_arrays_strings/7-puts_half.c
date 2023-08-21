@@ -15,13 +15,11 @@ void puts_half(char *str)
 	if (len % 2 == 0)
 	{
 		len /= 2;
-		len--;
 		_puts(str + len);
 	}
 	else
 	{
 		len = (len - 1) / 2;
-		len--;
 		_puts(str + len);
 	}
 }
