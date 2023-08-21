@@ -23,11 +23,9 @@ int _atoi(char *s)
 			break;
 		i++;
 	}
-	while (s[i] >= 48 && s[i] <= 57)
+	while (s[i] >= 48 && s[i] <= 57 && s[i] != '\0')
 	{
 		cvr_s = (cvr_s * 10) + (s[i] - 48);
-		if (cvr_s * sign == -2147483648)
-			return (cvr_s * sign);
 		i++;
 	}
 	return (cvr_s * sign);
