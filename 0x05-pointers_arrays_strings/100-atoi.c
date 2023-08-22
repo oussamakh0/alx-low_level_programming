@@ -11,6 +11,7 @@ int _atoi(char *s)
 	int cvr_s;
 	int sign;
 	int i;
+	signed int n_i;
 
 	cvr_s = 0;
 	sign = 1;
@@ -25,8 +26,14 @@ int _atoi(char *s)
 	}
 	while (s[i] >= 48 && s[i] <= 57 && s[i] != '\0')
 	{
+
 		cvr_s = (cvr_s * 10) + (s[i] - 48);
+		if (cvr_s <= -2147483630)
+			n_i = cvr_s;
 		i++;
 	}
-	return (cvr_s * sign);
+	if (n_i != 0)
+		return (n_i * sign);
+	else
+		return (cvr_s * sign);
 }
