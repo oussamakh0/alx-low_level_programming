@@ -3,10 +3,10 @@
 /**
  *_atoi - converts a string into integers
  *@s: string to be converted
- *Return: integer, converted string
+ *Return: unsigned integer, converted string
  */
 
-int _atoi(char *s)
+unsigned int _atoi(char *s)
 {
 	unsigned int cvr_s;
 	int sign;
