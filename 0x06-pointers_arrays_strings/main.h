@@ -23,4 +23,6 @@ int separator(char c);
 
 char *leet(char *);
 
+char *rot13(char *);
+
 #endif
