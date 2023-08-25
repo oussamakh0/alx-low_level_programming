@@ -10,16 +10,28 @@
 
 void print_number(int n)
 {
-	unsigned int num;
-	num = n;
+	int count = 0, pow = 1;
+	unsigned int num = n;
+
+
 	if (n < 0)
 	{
-		_putchar(45);
+		_putchar('-');
 		num = -n;
 	}
-	if (num / 10)
+	while (n != 0)
 	{
-		print_number(num / 10);
+		n /= 10;
+		count++;
 	}
-	_putchar((num % 10) + '0');
+	while (count > 1)
+	{
+		pow *= 10;
+		count--;
+	}
+	while (pow >= 1)
+	{
+		_putchar(num / pow % 10 + '0');
+		pow /= 10;
+	}
 }
