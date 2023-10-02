@@ -9,11 +9,14 @@
 
 #include <stdio.h>
 #include "main.h"
-#include <stdlib.h>
 
-int main(int argc, char **argv)
+int main(__attribute__((unused)) int argc, char **argv)
 {
-	(void)argc;
-	printf("%d\n", argc);
+	if (argc != 1)
+	{
+		printf("%d\n", argc);
+	}
+	else
+		printf("%d\n", 0);
 	return (0);
 }
