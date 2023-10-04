@@ -17,6 +17,9 @@
  * 		It returns NULL if insufficient memory was available
 */
 
+void _strcpy(char *s1, char *s2);
+size_t _strlen(char *s);
+
 char *_strdup(char *str)
 {
 	char *dup_str;
