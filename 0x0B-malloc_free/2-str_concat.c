@@ -44,7 +44,7 @@ void _str_fill(char *f_s1, char *s_s2, char *s)
  *str_concat - a function that concatenates two strings.
  *@s1: str 1 to be joined with s2
  *@s2: str 2 to be joined with s1
- *return: new string containing copy from s1 and s2 or null
+ * Return: new string containing copy from s1 and s2 or null
 */
 
 char *str_concat(char *s1, char *s2)
@@ -54,7 +54,7 @@ char *str_concat(char *s1, char *s2)
 
 	s = NULL;
 	len = 0;
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL && s2 == NULL)
 		return (NULL);
 	len += _strlen(s1);
 	len += _strlen(s2);
