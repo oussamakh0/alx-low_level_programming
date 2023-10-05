@@ -36,7 +36,7 @@ void _str_fill(char *f_s1, char *s_s2, char *s)
 	{
 		*s = *s_s2;
 		s++;
-		s_s2;
+		s_s2++;
 	}
 }
 
