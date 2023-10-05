@@ -8,12 +8,12 @@
 
 size_t _strlen(char *s)
 {
-        size_t s_len;
+	size_t	s_len;
 
-        s_len = 0;
-        while (s[s_len] != '\0')
-                s_len++;
-        return (s_len);
+	s_len = 0;
+	while (s[s_len] != '\0')
+		s_len++;
+	return (s_len);
 }
 
 /**
@@ -25,13 +25,13 @@ size_t _strlen(char *s)
 
 void _strcpy(char *s1, char *s2)
 {
-        while (*s1 != '\0')
-        {
-                *s2 = *s1;
-                s1++;
-                s2++;
-        }
-        *s2 = '\0';
+	while (*s1 != '\0')
+	{
+		*s2 = *s1;
+		s1++;
+		s2++;
+	}
+	*s2 = '\0';
 }
 
 /**
