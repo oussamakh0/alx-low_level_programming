@@ -3,7 +3,6 @@
 /*
  *sum_them_all - function that returns the sum of all its parameters.
  *@n: the last fixed param or the number of params
- *@...: optional params
  *Return: the sum of all params
 */
 
@@ -13,7 +12,7 @@ int sum_them_all(const unsigned int n, ...)
 	int sum;
 	unsigned int i;
 
-	if (n == 0)
+	if (!n)
 		return (0);
 	va_start(ap, n);
 	i = 0;
@@ -24,5 +23,5 @@ int sum_them_all(const unsigned int n, ...)
 		i++;
 	}
 	va_end(ap);
-	RETURN (sum);
+	return (sum);
 }
