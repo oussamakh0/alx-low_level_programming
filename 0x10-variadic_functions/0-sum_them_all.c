@@ -16,11 +16,13 @@ int sum_them_all(const unsigned int n, ...)
 	if (n == 0)
 		return (0);
 	va_start(ap, n);
-	sum = i = 0;
+	i = 0;
+	sum = 0;
 	while (i < n)
 	{
 		sum += va_arg(ap, int);
 		i++;
 	}
+	va_end(ap);
 	RETURN (sum);
 }
