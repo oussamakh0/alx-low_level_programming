@@ -11,6 +11,7 @@ int ft_first(char *str, char *st)
 {
 	int res;
 
+	res = 0;
 	if (&str[0] == &st[0])
 		res = str[0];
 	else
@@ -29,6 +30,7 @@ int ft_second(char *ss, char *sss)
 {
 	int res;
 
+	res = 0;
 	if (&ss[0] == &sss[0])
 		res = ss[0];
 	else
@@ -46,6 +48,7 @@ int ft_len(char *s)
 {
 	int len;
 
+	len = 0;
 	if (*s == '\0')
 		len = 1;
 	else
