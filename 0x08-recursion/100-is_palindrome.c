@@ -54,7 +54,7 @@ int ft_len(char *s)
 	else if (*(s + len) != '\0')
         {
 		len++;
-		len += _strlen_recursion(s + len);
+		len += ft_len(s + len);
 	}
 	return (len);
 }
