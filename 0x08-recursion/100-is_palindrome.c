@@ -52,7 +52,7 @@ int ft_len(char *s)
 	if (*(s + len) == '\0')
 		return (len);
 	else if (*(s + len) != '\0')
-        {
+	{
 		len++;
 		len += ft_len(s + len);
 	}
