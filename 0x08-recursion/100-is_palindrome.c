@@ -49,10 +49,13 @@ int ft_len(char *s)
 	int len;
 
 	len = 0;
-	if (*s == '\0')
-		len = 1;
-	else
-		len = len + ft_len(s + 1);
+	if (*(s + len) == '\0')
+		return (len);
+	else if (*(s + len) != '\0')
+        {
+		len++;
+		len += _strlen_recursion(s + len);
+	}
 	return (len);
 }
 
