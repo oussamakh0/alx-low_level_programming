@@ -49,7 +49,7 @@ int ft_len(char *s)
 	if (*s == '\0')
 		len = 1;
 	else
-		len += ft_len(s + 1);
+		len = len + ft_len(s + 1);
 	return (len);
 }
 
