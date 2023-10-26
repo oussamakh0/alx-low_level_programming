@@ -2,9 +2,9 @@
 
 /**
  * ft_first - check the first prt and returns the rest
- * #str: the start of the string
+ * @str: the start of the string
  * @st: the end of the string
- * Return: the result of substraction 
+ * Return: the result of substraction
 */
 
 int ft_first(char *str, char *st)
@@ -16,7 +16,7 @@ int ft_first(char *str, char *st)
 		res = str[0];
 	else
 		res = str[0] - ft_first(str + 1, st);
-	return res;
+	return (res);
 }
 
 /**
@@ -35,7 +35,7 @@ int ft_second(char *ss, char *sss)
 		res = ss[0];
 	else
 		res = ss[0] - ft_second(ss - 1, sss);
-	return res;
+	return (res);
 }
 
 /**
@@ -71,7 +71,7 @@ int is_palindrome(char *s)
 	if (*s == '\0')
 		return (1);
 	len = ft_len(s);
-	res1 = ft_first(s, s + (len - 1)/2);
-	res2 = ft_second(s + (len - 1), s + (len/2));
+	res1 = ft_first(s, s + (len - 1) / 2);
+	res2 = ft_second(s + (len - 1), s + (len / 2));
 	return (res1 == res2);
 }
