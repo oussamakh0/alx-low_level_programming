@@ -39,7 +39,7 @@ int main(int argc, char **argv)
 /**
  * symb_check - check if any of the argument(numbers contain a symbole)
  * @strs: array of strings(shoul be numbers)
- *
+ * @n_a: number of arguments
  * Return: 1 if containing a symbole, 0 otherwise
 */
 
