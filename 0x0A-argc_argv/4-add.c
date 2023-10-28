@@ -16,13 +16,14 @@ int main(int argc, char **argv)
 	int i;
 	int sum;
 
-	i = sum = 0;
-	if (argc <= 2)
+	i = 0;
+	sum = 0;
+	if (argc < 3)
 	{
 		printf("0\n");
 		return (1);
 	}
-	if (symb_check(argv, argc))
+	else if(symb_check(argv, argc))
 	{
 		printf("Error\n");
 		return (1);
