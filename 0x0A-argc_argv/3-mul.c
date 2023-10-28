@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -29,7 +30,7 @@ int main(int argc, char **argv)
 		strf2 = (char *)argv[2];
 		factor1 = atoi(strf1);
 		factor2 = atoi(strf2);
-		printf("%u\n", factor1 * factor2);
+		printf("%d\n", factor1 * factor2);
 	}
 	else
 	{
