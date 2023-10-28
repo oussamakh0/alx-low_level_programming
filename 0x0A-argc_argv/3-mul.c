@@ -17,19 +17,20 @@ int main(int argc, char **argv)
 {
 	unsigned int factor1;
        	unsigned int factor2;
-	const char *strf1;
-	const char *strf2;
+
+	char *strf1;
+	char *strf2;
 
 	strf1 = NULL;
 	strf2 = NULL;
 	factor1 = factor2 = 1;
 	if (argc >= 3)
 	{
-		strf1 = (const char *)argv[1];
-		strf2 = (const char *)argv[2];
+		strf1 = (char *)argv[1];
+		strf2 = (char *)argv[2];
 		factor1 = _atoi(strf1);
 		factor2 = _atoi(strf2);
-		printf("%d\n", factor1 * factor2);
+		printf("%u\n", factor1 * factor2);
 	}
 	else
 	{
