@@ -23,7 +23,8 @@ int main(int argc, char **argv)
 
 	strf1 = NULL;
 	strf2 = NULL;
-	factor1 = factor2 = 1;
+	factor1 = 1;
+	factor2 = 1;
 	if (argc >= 3)
 	{
 		strf1 = (char *)argv[1];
