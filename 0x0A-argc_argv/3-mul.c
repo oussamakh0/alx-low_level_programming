@@ -10,8 +10,10 @@
 
 int main(int argc, char **argv)
 {
-	int	factor1;
-       	int	factor2;
+	int factor1;
+       	int factor2;
+	(void) argc;
+
 	if (argc >= 3)
 	{
 		factor1 = atoi(argv[1]);
