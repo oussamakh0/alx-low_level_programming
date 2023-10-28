@@ -15,7 +15,8 @@
 
 int main(int argc, char **argv)
 {
-	unsigned int factor1, factor2;
+	unsigned int factor1;
+       	unsigned int factor2;
 	const char *strf1;
 	const char *strf2;
 
@@ -47,25 +48,25 @@ int main(int argc, char **argv)
 
 unsigned int _atoi(char *s)
 {
-        unsigned int cvr_s;
-        int sign;
-        int i;
+	unsigned int cvr_s;
+	int sign;
+	int i;
 
-        cvr_s = 0;
-        sign = 1;
-        i = 0;
-        while (s[i] != '\0')
-        {
-                if (s[i] == '-')
-                        sign *= -1;
-                else if (s[i] >= 48 && s[i] <= 57)
-                        break;
-                i++;
-        }
-        while (s[i] >= 48 && s[i] <= 57 && s[i] != '\0')
-        {
-                cvr_s = (cvr_s * 10) + (s[i] - 48);
-                i++;
-        }
-        return (cvr_s * sign);
+	cvr_s = 0;
+	sign = 1;
+	i = 0;
+	while (s[i] != '\0')
+	{
+		if (s[i] == '-')
+			sign *= -1;
+		else if (s[i] >= 48 && s[i] <= 57)
+			break;
+		i++;
+	}
+	while (s[i] >= 48 && s[i] <= 57 && s[i] != '\0')
+	{
+		cvr_s = (cvr_s * 10) + (s[i] - 48);
+		i++;
+	}
+	return (cvr_s * sign);
 }
