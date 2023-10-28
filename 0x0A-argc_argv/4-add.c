@@ -9,23 +9,29 @@
  * Return: the sum of two arguments
 */
 
-int symb_check(char **strs);
+int symb_check(char **strs, int n_a);
 
 int main(int argc, char **argv)
 {
+	int i;
+	int sum;
+
+	i = sum = 0;
 	if (argc <= 2)
 	{
 		printf("0\n");
 		return (1);
 	}
-	if (symb_check(argv))
+	if (symb_check(argv, argc))
 	{
 		printf("Error\n");
 		return (1);
 	}
 	else
 	{
-		printf("%d\n", atoi(argv[1]) + atoi(argv[2]));
+		for (i = 1; i < argc; i++)
+			sum += atoi(argv[i]);
+		printf("%d\n", sum);
 		return (0);
 	}
 }
@@ -37,12 +43,12 @@ int main(int argc, char **argv)
  * Return: 1 if containing a symbole, 0 otherwise
 */
 
-int symb_check(char **strs)
+int symb_check(char **strs, int n_a)
 {
 	int i;
 	int j;
 
-	for (i = 1; i < 3; i++)
+	for (i = 1; i < n_a; i++)
 	{
 		for (j = 0; strs[i][j] != '\0'; j++)
 		{
