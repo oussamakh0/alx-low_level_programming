@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 	int factor1;
        	int factor2;
 
-	if (argc == 3)
+	if (argc >= 3)
 	{
 		factor1 = atoi(argv[1]);
 		factor2 = atoi(argv[2]);
