@@ -15,9 +15,8 @@
 
 int main(int argc, char **argv)
 {
-	unsigned int factor1;
-       	unsigned int factor2;
-
+	int factor1;
+       	int factor2;
 	char *strf1;
 	char *strf2;
 
@@ -28,8 +27,8 @@ int main(int argc, char **argv)
 	{
 		strf1 = (char *)argv[1];
 		strf2 = (char *)argv[2];
-		factor1 = _atoi(strf1);
-		factor2 = _atoi(strf2);
+		factor1 = atoi(strf1);
+		factor2 = atoi(strf2);
 		printf("%u\n", factor1 * factor2);
 	}
 	else
@@ -38,36 +37,4 @@ int main(int argc, char **argv)
 		return (1);
 	}
 	return (0);
-}
-
-
-/**
- *_atoi - converts a string into integers
- *@s: string to be converted
- *Return: unsigned integer, converted string
- */
-
-unsigned int _atoi(char *s)
-{
-	unsigned int cvr_s;
-	int sign;
-	int i;
-
-	cvr_s = 0;
-	sign = 1;
-	i = 0;
-	while (s[i] != '\0')
-	{
-		if (s[i] == '-')
-			sign *= -1;
-		else if (s[i] >= 48 && s[i] <= 57)
-			break;
-		i++;
-	}
-	while (s[i] >= 48 && s[i] <= 57 && s[i] != '\0')
-	{
-		cvr_s = (cvr_s * 10) + (s[i] - 48);
-		i++;
-	}
-	return (cvr_s * sign);
 }
