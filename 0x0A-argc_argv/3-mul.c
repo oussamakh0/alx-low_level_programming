@@ -11,19 +11,14 @@
 
 int main(int argc, char **argv)
 {
-	int factor1;
-       	int factor2;
-
-	if (argc >= 3)
-	{
-		factor1 = atoi(argv[1]);
-		factor2 = atoi(argv[2]);
-		printf("%d\n", factor1 * factor2);
-		return (0);
-	}
-	else
+	if (argc < 3 || argc > 3)
 	{
 		printf("Error\n");
 		return (1);
+	}
+	else
+	{
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+		return (0);
 	}
 }
