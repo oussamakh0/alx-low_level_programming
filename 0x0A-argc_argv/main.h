@@ -6,4 +6,8 @@ int _putchar(char c);
 
 int main(int argc, char **argv);
 
+
+unsigned int _atoi(char *s);
+
+
 #endif
