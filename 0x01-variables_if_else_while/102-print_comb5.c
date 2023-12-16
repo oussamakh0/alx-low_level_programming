@@ -1,62 +1,40 @@
 #include <stdio.h>
+
 /**
-  *main - myfunc
-  *Return: 0
+*main - myfunc
+*Return: 0 on success
 */
-/*int main(void)
+int main(void)
 {
 	int i, j;
+	int a, b, c, d;
 
-	for (i = 0; i <= 99; i++)
+	for (i = 0; i < 100; i++)
 	{
-		for (j = i + 1; j <= 99; j++)
-		{
-			putchar((i / 10) + '0');
-			putchar((i % 10) + '0');
-			putchar(' ');
-			putchar((j / 10) + '0');
-			putchar((j % 10) + '0');
-			if (i < 98 || j < 99)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
-	}
-	putchar('\n');
-	return (0);
-}
-*/
-int main()
-{
-	int i;
-	int j;
-	int k;
-	int l;
+		a = i / 10; /* doubles fnum */
+		b = i % 10; /* singles fnum */
 
-	for (i = 0; i <= 9; i++)
-	{
-		for (j = 0; j <= 8; j++)
+		for (j = 0; j < 100; j++)
 		{
-			for (k = 0; k <= 9; k++)
+			c = j / 10; /* doubles snum */
+			d = j % 10; /* singles snum */
+
+			if (a < c || (a == c && b < d))
 			{
-				for (l = 0; l <= 9; l++)
+				putchar(a + '0');
+				putchar(b + '0');
+				putchar(32);
+				putchar(c + '0');
+				putchar(d + '0');
+
+				if (!(a == 9 && b == 8))
 				{
-					if ( i + j >= l + k)
-						continue;
-					putchar(48 + i);
-					putchar(48 + j);
-					putchar(' ');
-					putchar(48 + k);
-					putchar(48 + l);
-					if (i == 9 && j == 8 && k == 9 && l == 9)
-						break;
-					putchar(',');
-					putchar(' ');
+					putchar(44);
+					putchar(32);
 				}
 			}
 		}
 	}
-	putchar('\n');
-	return 0;
+	putchar(10);
+	return (0);
 }
