@@ -2,7 +2,7 @@
 /**
  *main - Write a program that prints all combinations of single digs
  *Return: 0 on success
- */
+*/
 
 int main(void)
 {
